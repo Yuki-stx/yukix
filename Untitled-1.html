@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 2fr 2fr 2fr;
+            grid-rows: 200p 200px;
+        }
+        @media only screen and (max-width:600px){
+            .container{
+                grid-template-columns: 2fr 2fr;
+            }
+            
+        }
+        @media only screen and (max-width:400px) {
+            .container{
+                grid-template-columns: auto;
+            }
+            
+        }
+    </style>
+</body>
+</html>
